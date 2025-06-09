@@ -40,8 +40,8 @@ def extract_faces_from_grid(image_path, output_dir, cols, rows, padding=0, prefi
 if __name__ == "__main__":
     # Replace with your image paths and grid specs
     images_to_process = [
-        ("images7.jpg", 4, 6, 27),  # 30 faces with padding
+        ("images1.jpg", 4, 6, 27),  # 30 faces with padding
     ]
 
     for i, (path, cols, rows, padding) in enumerate(images_to_process, start=1):
-        extract_faces_from_grid(path, f"output_faces", cols, rows, padding, "face", 136)
+        extract_faces_from_grid(path, f"output_faces", cols, rows, padding, "face", 0)

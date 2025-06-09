@@ -1,7 +1,7 @@
 <template>
   <div class="profiles">
     <div v-for="profile in profiles" :key="profile.id" class="profile-card">
-      <img :src="`/profiles/face_${profile.id}.png`" :alt="profile.name" class="profile-img" />
+      <img :src="`./profiles/face_${profile.id}.png`" :alt="profile.name" class="profile-img" />
       <div class="profile-name">{{ `${profile.id}. ${profile.name}` }}</div>
       <div class="profile-detail">Name (cont): {{ profile.name_cont }}</div>
       <div class="profile-detail">K/C: {{ profile.kc }}</div>
